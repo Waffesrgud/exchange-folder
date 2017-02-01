@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>88</x>
+      <y>168</y>
+      <w>184</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Universe
+--
++universeMap : Galaxy[][]
+--
++toString() -&gt; String
++Universe(size)
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>88</x>
+      <y>248</y>
+      <w>184</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Galaxy
+--
++galaxyMap : SolarSystem[][]
+--
++toString() -&gt; String
++Galaxy(shape, size)
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>88</x>
+      <y>328</y>
+      <w>184</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>SolarSystem
+--
++solarMap : Planet[]
+--
++toString() -&gt; String
++SolarSystem(starType, size)
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>88</x>
+      <y>408</y>
+      <w>184</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>Planet
+--
++planetMap : PlanetMap
+--
++toString() -&gt; String
++Planet(many parameters)
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>376</x>
+      <y>400</y>
+      <w>184</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>PlanetMap
+--
+-grid : [][]
+--
++toString() -&gt; String
++rules for moving around it
+like looping around and such
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>608</x>
+      <y>136</y>
+      <w>520</w>
+      <h>472</h>
+    </coordinates>
+    <panel_attributes>View/Controller
+--
+bg=yellow
+
+layer=-2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>80</x>
+      <y>136</y>
+      <w>528</w>
+      <h>472</h>
+    </coordinates>
+    <panel_attributes>Model
+--
+
+layer=-1
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>264</x>
+      <y>424</y>
+      <w>128</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;140.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>88</x>
+      <y>480</y>
+      <w>184</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Area
+--
++Lots of things
+--
++toString() -&gt; String
++Planet(many parameters)
+bg=orange
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>408</x>
+      <y>168</y>
+      <w>160</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>BigBangInitializer
+--
+Initializes a map when used
+After constructor init
+saves vastly on memory</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>264</x>
+      <y>176</y>
+      <w>240</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>280.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>264</x>
+      <y>176</y>
+      <w>240</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>280.0;10.0;30.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>264</x>
+      <y>176</y>
+      <w>240</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>280.0;10.0;60.0;10.0;10.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>264</x>
+      <y>176</y>
+      <w>240</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>280.0;10.0;100.0;10.0;10.0;330.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>176</y>
+      <w>120</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0;130.0;280.0;100.0;280.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>264</x>
+      <y>176</y>
+      <w>240</w>
+      <h>352</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>280.0;10.0;140.0;10.0;10.0;420.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1008</x>
+      <y>160</y>
+      <w>112</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Will use layers to
+switch between
+maps,
+impressive
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>624</x>
+      <y>168</y>
+      <w>376</w>
+      <h>424</h>
+    </coordinates>
+    <panel_attributes>Panel
+--
+bg=yellow
+
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>768</x>
+      <y>200</y>
+      <w>224</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>JTable
+--
+lets you select elements, maybe have
+to use coordinate typing system
+
+will constantly change, but size will
+have to be standardized for now
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>632</x>
+      <y>200</y>
+      <w>128</w>
+      <h>376</h>
+    </coordinates>
+    <panel_attributes>buttons and stuff
+--
+extra control
+
+basically just to
+make sure the
+tests pass correctly
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>768</x>
+      <y>400</y>
+      <w>224</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>JScrollPane
+--
+displays information about JTable 
+selection
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
